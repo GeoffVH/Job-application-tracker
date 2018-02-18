@@ -27,11 +27,16 @@ This extension is built to assist in tracking number of applications sent, displ
 - [ ] **Unit test:** Autofill text inputs from stored data.
 - [ ] Research best graph for timeline
 - [ ] **Unit test:** Display a graph given dummy data
+ - [ ] Display all days except future days not yet arrived as X
+ - [ ] Display number of applications sent as Y 
 - [ ] **Unit test:** Search through stored data using date
 - [ ] **Unit test:** Search through stored data using keyword
 - [ ] Create Popup HTML homepage
  - [ ] Search options
  - [ ] Add button
  - [ ] Graph
+- [ ] Create on complete HTML homepage
+- [ ] **Unit test:** Trigger change in page from homepage to sucess page
+- [ ] **Unit test:** Have sucess page automatically close itself after 3 seconds.  
 - [ ] Plan architecture
 - [ ] Create MVP  
