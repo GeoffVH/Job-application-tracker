@@ -1,7 +1,7 @@
 # Job application tracker
 
 What gets logged, gets done. 
-This extension is built to assist in tracking number of applications sent, display graphs showing job search activity, and organize past job applications. 
+This extension is built to assist in tracking number of applications sent each day, display graphs showing job search activity, and organize past job applications. 
 
 ** This project is currently in development **
 
