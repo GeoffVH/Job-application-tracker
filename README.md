@@ -20,12 +20,13 @@ This extension is built to assist in tracking number of applications sent, displ
 
 # Roadmap
 
+- [ ] Familiarize with moment.js
+- [ ] Familiarize with chartJS
+- [ ] Research best manner of storage for data to be searchable
 - [ ] **Unit test:** Recover URL and store a part of it.
-- [ ] Research best manner of storage for date - company that can be searchable
 - [ ] **Unit test:** Save URL into storage
 - [ ] **Unit test:** Recover today's date
 - [ ] **Unit test:** Autofill text inputs from stored data.
-- [ ] Research best graph for timeline
 - [ ] **Unit test:** Display a graph given dummy data
  - [ ] Display all days except future days not yet arrived as X
  - [ ] Display number of applications sent as Y 
