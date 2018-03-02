@@ -1,7 +1,7 @@
 # Job application tracker
 
 What gets logged, gets done. 
-This extension is built to assist in tracking number of applications sent, display graphs showing job search activity, and organize past job applications. 
+This extension is built to assist in tracking number of applications sent each day, display graphs showing job search activity, and organize past job applications. 
 
 ** This project is currently in development **
 
@@ -20,13 +20,19 @@ This extension is built to assist in tracking number of applications sent, displ
 
 # Roadmap
 
+- [ ] Familiarize with moment.js
+- [ ] Familiarize with chartJS
+- [ ] Research best manner of storage for data to be searchable
 - [ ] **Unit test:** Recover URL and store a part of it.
-- [ ] Research best manner of storage for date - company that can be searchable
 - [ ] **Unit test:** Save URL into storage
 - [ ] **Unit test:** Recover today's date
 - [ ] **Unit test:** Autofill text inputs from stored data.
+<<<<<<< HEAD
 - [ ] Research best graph for timeline
 - [X] **Unit test:** Display a graph given dummy data
+=======
+- [ ] **Unit test:** Display a graph given dummy data
+>>>>>>> origin/master
  - [ ] Display all days except future days not yet arrived as X
  - [ ] Display number of applications sent as Y 
 - [ ] **Unit test:** Search through stored data using date
