@@ -26,7 +26,7 @@ This extension is built to assist in tracking number of applications sent, displ
 - [ ] **Unit test:** Recover today's date
 - [ ] **Unit test:** Autofill text inputs from stored data.
 - [ ] Research best graph for timeline
-- [ ] **Unit test:** Display a graph given dummy data
+- [X] **Unit test:** Display a graph given dummy data
  - [ ] Display all days except future days not yet arrived as X
  - [ ] Display number of applications sent as Y 
 - [ ] **Unit test:** Search through stored data using date
