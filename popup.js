@@ -1,71 +1,29 @@
+var ctx = document.getElementById("myChart").getContext('2d');
 
-
-	function randomNumber(min, max) {
-			return Math.random() * (max - min) + min;
-		}
-
-		function randomBar(date, lastClose) {
-			var open = randomNumber(lastClose * 0.95, lastClose * 1.05);
-			var close = randomNumber(open * 0.95, open * 1.05);
-			return {
-				t: date.valueOf(),
-				y: close
-			};
-		}
-
-		var dateFormat = 'MMMM DD YYYY';
-		var date = moment('April 01 2017', dateFormat);
-		var data = [randomBar(date, 30)];
-		var labels = [date];
-		while (data.length < 60) {
-			date = date.clone().add(1, 'd');
-			if (date.isoWeekday() <= 5) {
-				data.push(randomBar(date, data[data.length - 1].y));
-				labels.push(date);
-			}
-		}
-
-		var ctx = document.getElementById('myChart').getContext('2d');
-		ctx.canvas.width = 1000;
-		ctx.canvas.height = 300;
-		var cfg = {
-			type: 'bar',
-			data: {
-				labels: labels,
-				datasets: [{
-					label: 'CHRT - Chart.js Corporation',
-					data: data,
-					type: 'line',
-					pointRadius: 0,
-					fill: false,
-					lineTension: 0,
-					borderWidth: 2
-				}]
-			},
-			options: {
-				scales: {
-					xAxes: [{
-						type: 'time',
-						distribution: 'series',
-						ticks: {
-							source: 'labels'
-						}
-					}],
-					yAxes: [{
-						scaleLabel: {
-							display: true,
-							labelString: 'Closing price ($)'
-						}
-					}]
-				}
-			}
-		};
-		var chart = new Chart(ctx, cfg);
-
-		document.getElementById('update').addEventListener('click', function() {
-			var type = document.getElementById('type').value;
-			chart.config.data.datasets[0].type = type;
-			chart.update();
-		});
-
+ function newDate(days) {
+	    var obj = moment().add(days, 'd').toDate();
+		return moment(obj).format("MMM Do").toString();
+	}
 	
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [newDate(-6), newDate(-5), newDate(-4), newDate(-3), newDate(-2), newDate(-1), newDate(0), newDate(1)],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3, 7, 9],
+            backgroundColor: 'rgba(66, 134, 244, 0.2)',
+            borderColor: 'rgba(66, 134, 244, 0.9)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
